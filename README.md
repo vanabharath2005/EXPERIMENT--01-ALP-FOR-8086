@@ -77,25 +77,75 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for arithmetic  operations
 
+
 ## Addition  of 8 bit ALP 
+org 100h  
+
+mov al, 25h    
+mov bl, 13h    
+add al, bl     
+mov [2375h], al
+
+ret            
 
 
 
 ## Output  
+![image](https://github.com/user-attachments/assets/8c9040da-60c2-4ef0-aa0b-a956c25161f0)
+
  
 ## Subtraction   of 8 bit numbers  ALP 
+org 100h
+
+mov al, 25h    
+mov bl, 13h    
+sub al, bl     
+mov [0009h], al 
+
+ret
  
 ## Output  
+![image](https://github.com/user-attachments/assets/feffd8b2-b821-4f36-8f6e-4104ef0a64d9)
+
 ## Multiplication alp 
+org 100h
+
+mov ax, 4101h  
+mov [6000h], ax
+mov bx, 2218h  
+mov ax, [6000h]
+mul bx         
+
+mov [5008h], ax
+
+
+ret
  ## Output  
+ ![image](https://github.com/user-attachments/assets/f73dccd0-ab03-4fa4-9edb-a23053f1d3da)
+
 
 
 ## Division alp 
+org 100h            
+
+mov ax, 0b161h      
+mov dx, 0           
+
+mov [2000h], 0a415h 
+mov bx, [2000h]     
+div bx              
+
+mov [1121h], ax     
+
+ret                 
 
 ## Output  
+![image](https://github.com/user-attachments/assets/9741ca8d-c569-45fd-904c-03069c6d2ab0)
+
 
 
 ## Result :
+Thus, Assembly Language Program for fundamental arithmetic and logical operations are exected succesfully.
  
 
 
