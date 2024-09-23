@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+Name :VANA BHARATH D
+Roll no :212223040231
+Date of experiment :18/09/2024
 
 
 
